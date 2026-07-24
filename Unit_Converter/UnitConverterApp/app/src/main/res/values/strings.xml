@@ -10,7 +10,8 @@
     <string name="hint_enter_value">Enter value to convert</string>
     <string name="btn_convert">Convert Value</string>
     <string name="title_result">Converted Result</string>
-    <string name="placeholder_result">Result will appear here</string>
+    <string name="placeholder_result">Enter a value and tap Convert</string>
+    <string name="cd_swap_units">Swap Source and Target Units</string>
 
     <!-- Error Toast Messages -->
     <string name="error_empty_input">Please enter a numeric value to convert.</string>

@@ -53,11 +53,13 @@
                         android:id="@+id/spinner_category"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_marginTop="@dimen/spacing_small" />
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:background="@drawable/bg_spinner"
+                        android:popupBackground="@color/surface" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Unit Selection Card (From & To Units) -->
+            <!-- Unit Selection Card (From & To Units with Circular Swap Button) -->
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.UnitConverter.Card"
                 android:layout_width="match_parent"
@@ -82,12 +84,32 @@
                         android:id="@+id/spinner_source_unit"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_marginTop="@dimen/spacing_small" />
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:background="@drawable/bg_spinner"
+                        android:popupBackground="@color/surface" />
+
+                    <!-- Circular Swap Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_swap_units"
+                        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="@dimen/spacing_small"
+                        android:contentDescription="@string/cd_swap_units"
+                        android:padding="0dp"
+                        app:icon="@drawable/ic_swap"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp"
+                        app:iconSize="24dp"
+                        app:iconTint="@color/primary"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:strokeColor="@color/primary"
+                        app:strokeWidth="1dp" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_medium"
                         android:text="@string/label_to_unit"
                         android:textSize="@dimen/text_size_subtitle"
                         android:textStyle="bold"
@@ -97,11 +119,13 @@
                         android:id="@+id/spinner_target_unit"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_marginTop="@dimen/spacing_small" />
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:background="@drawable/bg_spinner"
+                        android:popupBackground="@color/surface" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Input Section -->
+            <!-- Input Section Card -->
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.UnitConverter.Card"
                 android:layout_width="match_parent"
@@ -133,11 +157,11 @@
             <!-- Convert Action Button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_convert"
+                style="@style/Widget.UnitConverter.Button"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/button_height"
                 android:layout_marginBottom="@dimen/spacing_medium"
                 android:text="@string/btn_convert"
-                android:textSize="16sp"
                 app:cornerRadius="@dimen/card_corner_radius" />
 
             <!-- Result Display Card -->
@@ -166,6 +190,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_small"
+                        android:gravity="center"
                         android:text="@string/placeholder_result"
                         android:textColor="@color/result_text"
                         android:textSize="@dimen/text_size_result"

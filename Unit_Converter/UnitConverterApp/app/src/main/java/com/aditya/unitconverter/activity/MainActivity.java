@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerTargetUnit;
     private TextInputEditText etInputValue;
     private MaterialButton btnConvert;
+    private MaterialButton btnSwapUnits;
     private MaterialTextView tvResultOutput;
 
     private Category selectedCategory = Category.LENGTH;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         setupCategorySpinner();
         setupConvertButtonListener();
+        setupSwapButtonListener();
     }
 
     private void initViews() {
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerTargetUnit = findViewById(R.id.spinner_target_unit);
         etInputValue = findViewById(R.id.et_input_value);
         btnConvert = findViewById(R.id.btn_convert);
+        btnSwapUnits = findViewById(R.id.btn_swap_units);
         tvResultOutput = findViewById(R.id.tv_result_output);
     }
 
@@ -52,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> categoryAdapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.categories_array,
-                android.R.layout.simple_spinner_item
+                R.layout.spinner_item
         );
-        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        categoryAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinnerCategory.setAdapter(categoryAdapter);
 
         spinnerCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -75,15 +78,35 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> unitAdapter = ArrayAdapter.createFromResource(
                 this,
                 category.getStringArrayResId(),
-                android.R.layout.simple_spinner_item
+                R.layout.spinner_item
         );
-        unitAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        unitAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinnerSourceUnit.setAdapter(unitAdapter);
         spinnerTargetUnit.setAdapter(unitAdapter);
+
+        // Reset result display on category change
+        tvResultOutput.setText(R.string.placeholder_result);
     }
 
     private void setupConvertButtonListener() {
         btnConvert.setOnClickListener(v -> performConversion());
+    }
+
+    private void setupSwapButtonListener() {
+        btnSwapUnits.setOnClickListener(v -> {
+            int sourcePos = spinnerSourceUnit.getSelectedItemPosition();
+            int targetPos = spinnerTargetUnit.getSelectedItemPosition();
+
+            if (sourcePos != AdapterView.INVALID_POSITION && targetPos != AdapterView.INVALID_POSITION) {
+                spinnerSourceUnit.setSelection(targetPos);
+                spinnerTargetUnit.setSelection(sourcePos);
+
+                String inputStr = etInputValue.getText() != null ? etInputValue.getText().toString().trim() : "";
+                if (!inputStr.isEmpty()) {
+                    performConversion();
+                }
+            }
+        });
     }
 
     private void performConversion() {
@@ -101,8 +124,25 @@ public class MainActivity extends AppCompatActivity {
         double inputValue = Double.parseDouble(inputStr.trim());
         double convertedValue = UnitConverterLogic.convert(inputValue, selectedCategory, sourceUnit, targetUnit);
 
-        String resultText = FormatterUtils.formatResult(convertedValue, targetUnit);
+        String formattedInput = FormatterUtils.formatResult(inputValue, sourceUnit);
+        String formattedOutput = FormatterUtils.formatResult(convertedValue, targetUnit);
+        String fullResultText = formattedInput + " = " + formattedOutput;
+
+        displayResultWithAnimation(fullResultText);
+    }
+
+    private void displayResultWithAnimation(String resultText) {
         tvResultOutput.setText(resultText);
+        tvResultOutput.setAlpha(0f);
+        tvResultOutput.setScaleX(0.95f);
+        tvResultOutput.setScaleY(0.95f);
+
+        tvResultOutput.animate()
+                .alpha(1f)
+                .scaleX(1f)
+                .scaleY(1f)
+                .setDuration(250)
+                .start();
     }
 
     public Category getSelectedCategory() {
