@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stopwatch</string>
+    <string name="default_time_display">00:00.00</string>
+
+    <!-- Button Labels -->
+    <string name="btn_start">Start</string>
+    <string name="btn_resume">Resume</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_lap">Lap</string>
+
+    <!-- Lap Headers & Labels -->
+    <string name="title_lap_history">Lap History</string>
+    <string name="empty_laps_message">No laps recorded yet. Press Start and tap Lap to record times.</string>
+    <string name="lap_number_format">Lap %1$d</string>
+    <string name="total_label_format">Total: %1$s</string>
+</resources>

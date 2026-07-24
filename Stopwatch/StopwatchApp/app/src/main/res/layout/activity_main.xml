@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.MainActivity">
+
+    <!-- Top Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/on_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium">
+
+        <!-- Timer Display Card -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.StopwatchApp.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="32dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_timer_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_time_display"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_size_timer"
+                    android:textStyle="bold"
+                    tools:text="00:00.00" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Button Controls Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_start"
+                style="@style/Widget.StopwatchApp.Button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_start_color"
+                android:text="@string/btn_start" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_pause"
+                style="@style/Widget.StopwatchApp.Button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_pause_color"
+                android:enabled="false"
+                android:text="@string/btn_pause" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset"
+                style="@style/Widget.StopwatchApp.Button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_reset_color"
+                android:enabled="false"
+                android:text="@string/btn_reset" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_lap"
+                style="@style/Widget.StopwatchApp.Button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_lap_color"
+                android:enabled="false"
+                android:text="@string/btn_lap" />
+        </LinearLayout>
+
+        <!-- Material Divider -->
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            app:dividerColor="@color/divider_color" />
+
+        <!-- Lap History Title -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:text="@string/title_lap_history"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="@dimen/text_size_subtitle"
+            android:textStyle="bold" />
+
+        <!-- Empty State Message -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_empty_laps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:gravity="center"
+            android:text="@string/empty_laps_message"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="@dimen/text_size_subtitle"
+            android:visibility="visible" />
+
+        <!-- Lap History RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_laps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            tools:listitem="@layout/item_lap" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="text_size_timer">48sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subtitle">14sp</dimen>
+    <dimen name="text_size_lap_time">16sp</dimen>
+</resources>
