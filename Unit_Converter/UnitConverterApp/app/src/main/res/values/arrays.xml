@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Categories -->
+    <string-array name="categories_array">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+    </string-array>
+
+    <!-- Length Units -->
+    <string-array name="length_units_array">
+        <item>Millimeter (mm)</item>
+        <item>Centimeter (cm)</item>
+        <item>Meter (m)</item>
+        <item>Kilometer (km)</item>
+        <item>Inch (in)</item>
+        <item>Foot (ft)</item>
+        <item>Mile (mi)</item>
+    </string-array>
+
+    <!-- Weight Units -->
+    <string-array name="weight_units_array">
+        <item>Milligram (mg)</item>
+        <item>Gram (g)</item>
+        <item>Kilogram (kg)</item>
+        <item>Ounce (oz)</item>
+        <item>Pound (lb)</item>
+    </string-array>
+
+    <!-- Temperature Units -->
+    <string-array name="temperature_units_array">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+</resources>

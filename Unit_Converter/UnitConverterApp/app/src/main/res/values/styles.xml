@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.UnitConverter" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary_variant</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Material Card Custom Style -->
+    <style name="Widget.UnitConverter.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">@dimen/card_stroke_width</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style>
+
+    <!-- Primary Material Button Style -->
+    <style name="Widget.UnitConverter.Button" parent="Widget.Material3.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/card_corner_radius</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="rippleColor">#33FFFFFF</item>
+    </style>
+</resources>
