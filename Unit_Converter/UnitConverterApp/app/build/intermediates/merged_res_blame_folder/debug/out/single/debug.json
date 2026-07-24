@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\layout_spinner_item.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "com.aditya.unitconverter.app-merged_res-31:/layout_spinner_item.xml.flat",
+        "source": "com.aditya.unitconverter.app-main-33:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\layout_spinner_dropdown_item.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\layout\\spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\drawable_bg_card_surface.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\drawable\\bg_card_surface.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\drawable_ic_swap.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\drawable\\ic_swap.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\drawable_bg_spinner.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\drawable\\bg_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-merged_res-31:\\drawable_bg_button_primary.xml.flat",
+        "source": "C:\\Users\\ADITYA HALDER\\.gradle\\daemon\\8.5\\com.aditya.unitconverter.app-main-33:\\drawable\\bg_button_primary.xml"
+    }
+]

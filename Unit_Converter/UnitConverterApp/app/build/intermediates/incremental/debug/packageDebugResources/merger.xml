@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res"><file name="bg_button_primary" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\drawable\bg_button_primary.xml" qualifiers="" type="drawable"/><file name="bg_card_surface" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\drawable\bg_card_surface.xml" qualifiers="" type="drawable"/><file name="activity_main" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\values\arrays.xml" qualifiers=""><string-array name="categories_array">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+    </string-array><string-array name="length_units_array">
+        <item>Millimeter (mm)</item>
+        <item>Centimeter (cm)</item>
+        <item>Meter (m)</item>
+        <item>Kilometer (km)</item>
+        <item>Inch (in)</item>
+        <item>Foot (ft)</item>
+        <item>Mile (mi)</item>
+    </string-array><string-array name="weight_units_array">
+        <item>Milligram (mg)</item>
+        <item>Gram (g)</item>
+        <item>Kilogram (kg)</item>
+        <item>Ounce (oz)</item>
+        <item>Pound (lb)</item>
+    </string-array><string-array name="temperature_units_array">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+        <item>Kelvin (K)</item>
+    </string-array></file><file path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\values\colors.xml" qualifiers=""><color name="primary">#1E88E5</color><color name="primary_variant">#1565C0</color><color name="secondary">#00ACC1</color><color name="background">#F8F9FA</color><color name="surface">#FFFFFF</color><color name="on_primary">#FFFFFF</color><color name="on_surface">#212121</color><color name="on_surface_variant">#757575</color><color name="card_stroke">#E0E0E0</color><color name="result_background">#E3F2FD</color><color name="result_text">#0D47A1</color></file><file path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="spacing_small">8dp</dimen><dimen name="spacing_medium">16dp</dimen><dimen name="spacing_large">24dp</dimen><dimen name="card_corner_radius">16dp</dimen><dimen name="card_elevation">4dp</dimen><dimen name="card_stroke_width">1dp</dimen><dimen name="text_size_title">20sp</dimen><dimen name="text_size_subtitle">16sp</dimen><dimen name="text_size_result">22sp</dimen><dimen name="button_height">56dp</dimen></file><file path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Unit Converter</string><string name="title_category_selection">Category Selection</string><string name="title_unit_selection">Unit Selection</string><string name="title_input_section">Input Value</string><string name="label_select_category">Select Category:</string><string name="label_from_unit">From Unit:</string><string name="label_to_unit">To Unit:</string><string name="hint_enter_value">Enter value to convert</string><string name="btn_convert">Convert Value</string><string name="title_result">Converted Result</string><string name="placeholder_result">Enter a value and tap Convert</string><string name="error_empty_input">Please enter a numeric value to convert.</string><string name="error_invalid_number">Invalid number format entered.</string><string name="error_negative_value">Length and Weight values cannot be negative.</string><string name="error_absolute_zero">Temperature cannot be below Absolute Zero (-273.15°C / 0K / -459.67°F).</string><string name="error_overflow">Input value is too large to convert safely.</string><string name="cd_swap_units">Swap Source and Target Units</string></file><file path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\values\styles.xml" qualifiers=""><style name="Theme.UnitConverter" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary_variant</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style><style name="Widget.UnitConverter.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">@dimen/card_stroke_width</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style><style name="Widget.UnitConverter.Button" parent="Widget.Material3.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/card_corner_radius</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="rippleColor">#33FFFFFF</item>
+    </style></file><file name="bg_spinner" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\drawable\bg_spinner.xml" qualifiers="" type="drawable"/><file name="ic_swap" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\drawable\ic_swap.xml" qualifiers="" type="drawable"/><file name="spinner_dropdown_item" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\layout\spinner_dropdown_item.xml" qualifiers="" type="layout"/><file name="spinner_item" path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\main\res\layout\spinner_item.xml" qualifiers="" type="layout"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Desktop\OIBSIP-Android\Unit_Converter\UnitConverterApp\app\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>

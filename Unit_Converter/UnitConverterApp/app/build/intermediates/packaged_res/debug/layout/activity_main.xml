@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.MainActivity">
+
+    <!-- Top Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/on_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+
+            <!-- Category Selection Card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.UnitConverter.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_select_category"
+                        android:textSize="@dimen/text_size_subtitle"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_surface" />
+
+                    <Spinner
+                        android:id="@+id/spinner_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:background="@drawable/bg_spinner"
+                        android:popupBackground="@color/surface" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Unit Selection Card (From & To Units with Circular Swap Button) -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.UnitConverter.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_from_unit"
+                        android:textSize="@dimen/text_size_subtitle"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_surface" />
+
+                    <Spinner
+                        android:id="@+id/spinner_source_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:background="@drawable/bg_spinner"
+                        android:popupBackground="@color/surface" />
+
+                    <!-- Circular Swap Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_swap_units"
+                        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="@dimen/spacing_small"
+                        android:contentDescription="@string/cd_swap_units"
+                        android:padding="0dp"
+                        app:icon="@drawable/ic_swap"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp"
+                        app:iconSize="24dp"
+                        app:iconTint="@color/primary"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:strokeColor="@color/primary"
+                        app:strokeWidth="1dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_to_unit"
+                        android:textSize="@dimen/text_size_subtitle"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_surface" />
+
+                    <Spinner
+                        android:id="@+id/spinner_target_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:background="@drawable/bg_spinner"
+                        android:popupBackground="@color/surface" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Input Section Card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.UnitConverter.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_enter_value"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_input_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Convert Action Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_convert"
+                style="@style/Widget.UnitConverter.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:text="@string/btn_convert"
+                app:cornerRadius="@dimen/card_corner_radius" />
+
+            <!-- Result Display Card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.UnitConverter.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/result_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_result"
+                        android:textSize="@dimen/text_size_subtitle"
+                        android:textColor="@color/on_surface_variant" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_result_output"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:gravity="center"
+                        android:text="@string/placeholder_result"
+                        android:textColor="@color/result_text"
+                        android:textSize="@dimen/text_size_result"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
