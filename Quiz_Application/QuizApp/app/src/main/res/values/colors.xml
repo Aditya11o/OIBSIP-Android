@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Palette -->
+    <color name="primary">#1E88E5</color>
+    <color name="primary_variant">#1565C0</color>
+    <color name="secondary">#00ACC1</color>
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_surface">#212121</color>
+    <color name="on_surface_variant">#757575</color>
+    
+    <!-- Option State Colors -->
+    <color name="option_border_default">#E0E0E0</color>
+    <color name="option_bg_default">#FFFFFF</color>
+    
+    <color name="option_correct_bg">#E8F5E9</color>
+    <color name="option_correct_border">#4CAF50</color>
+    <color name="option_correct_text">#2E7D32</color>
+
+    <color name="option_wrong_bg">#FFEBEE</color>
+    <color name="option_wrong_border">#F44336</color>
+    <color name="option_wrong_text">#C62828</color>
+</resources>

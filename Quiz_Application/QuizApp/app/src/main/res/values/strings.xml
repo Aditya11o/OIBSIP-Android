@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz Application</string>
+    <string name="welcome_title">Test Your Knowledge!</string>
+    <string name="welcome_subtitle">Welcome to the Android Development &amp; Tech Quiz. Test your skills with 10 interactive questions.</string>
+    <string name="btn_start_quiz">Start Quiz</string>
+    
+    <string name="question_counter_format">Question %1$d of %2$d</string>
+    <string name="btn_next_question">Next Question</string>
+    <string name="btn_finish_quiz">Finish Quiz</string>
+
+    <string name="title_quiz_results">Quiz Completed!</string>
+    <string name="label_final_score">Your Final Score</string>
+    <string name="score_format">%1$d / %2$d</string>
+    <string name="percentage_format">%1$d%%</string>
+    <string name="label_correct">Correct Answers: %1$d</string>
+    <string name="label_wrong">Wrong Answers: %1$d</string>
+    <string name="btn_restart_quiz">Restart Quiz</string>
+
+    <!-- Performance Badges -->
+    <string name="badge_master">🏆 Quiz Master!</string>
+    <string name="badge_good">👍 Good Job!</string>
+    <string name="badge_practice">📚 Keep Practicing!</string>
+</resources>
