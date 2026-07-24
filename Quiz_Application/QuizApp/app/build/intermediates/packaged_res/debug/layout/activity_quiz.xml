@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.QuizActivity">
+
+    <!-- Top Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/on_primary" />
+
+    <!-- Quiz Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="10"
+        android:progress="1"
+        android:progressDrawable="@drawable/bg_option_correct"
+        android:progressTint="@color/primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+
+            <!-- Question Counter Header -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_question_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="@dimen/text_size_subtitle"
+                android:textStyle="bold"
+                tools:text="Question 1 of 10" />
+
+            <!-- Question Card Box -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.QuizApp.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_medium">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_question_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/on_surface"
+                        android:textSize="@dimen/text_size_question"
+                        android:textStyle="bold"
+                        tools:text="Sample Android Quiz Question Text Here?" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Options RadioGroup -->
+            <RadioGroup
+                android:id="@+id/rg_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium">
+
+                <RadioButton
+                    android:id="@+id/rb_option_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:background="@drawable/bg_option_default"
+                    android:button="@null"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_size_option"
+                    tools:text="Option A Text" />
+
+                <RadioButton
+                    android:id="@+id/rb_option_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:background="@drawable/bg_option_default"
+                    android:button="@null"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_size_option"
+                    tools:text="Option B Text" />
+
+                <RadioButton
+                    android:id="@+id/rb_option_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:background="@drawable/bg_option_default"
+                    android:button="@null"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_size_option"
+                    tools:text="Option C Text" />
+
+                <RadioButton
+                    android:id="@+id/rb_option_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:background="@drawable/bg_option_default"
+                    android:button="@null"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="14dp"
+                    android:textColor="@color/on_surface"
+                    android:textSize="@dimen/text_size_option"
+                    tools:text="Option D Text" />
+            </RadioGroup>
+
+            <!-- Next Question Action Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next_question"
+                style="@style/Widget.QuizApp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:enabled="false"
+                android:text="@string/btn_next_question" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

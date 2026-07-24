@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.ResultActivity">
+
+    <!-- Top Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/on_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+            <!-- Result Summary Card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.QuizApp.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <!-- Performance Badge -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_size_title"
+                        android:textStyle="bold"
+                        tools:text="🏆 Quiz Master!" />
+
+                    <!-- Score Header -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="@string/label_final_score"
+                        android:textColor="@color/on_surface_variant"
+                        android:textSize="@dimen/text_size_subtitle" />
+
+                    <!-- Score Text -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_final_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:textColor="@color/on_surface"
+                        android:textSize="@dimen/text_size_score"
+                        android:textStyle="bold"
+                        tools:text="8 / 10" />
+
+                    <!-- Percentage Text -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_size_title"
+                        android:textStyle="bold"
+                        tools:text="80%" />
+
+                    <!-- Correct Count -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_correct_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:textColor="@color/option_correct_text"
+                        android:textSize="@dimen/text_size_subtitle"
+                        android:textStyle="bold"
+                        tools:text="Correct Answers: 8" />
+
+                    <!-- Wrong Count -->
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_wrong_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:textColor="@color/option_wrong_text"
+                        android:textSize="@dimen/text_size_subtitle"
+                        android:textStyle="bold"
+                        tools:text="Wrong Answers: 2" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Restart Quiz Material Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_restart_quiz"
+                style="@style/Widget.QuizApp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/btn_restart_quiz" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

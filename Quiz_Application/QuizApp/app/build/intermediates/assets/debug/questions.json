@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "Which programming language is primarily used for native Android development alongside Kotlin?",
+    "optionA": "Python",
+    "optionB": "Java",
+    "optionC": "C#",
+    "optionD": "Swift",
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "question": "Which layout manager arranges child views in a single horizontal or vertical row in Android?",
+    "optionA": "RelativeLayout",
+    "optionB": "FrameLayout",
+    "optionC": "LinearLayout",
+    "optionD": "ConstraintLayout",
+    "correctAnswer": 3
+  },
+  {
+    "id": 3,
+    "question": "What is the primary configuration file in every Android application project?",
+    "optionA": "build.gradle",
+    "optionB": "AndroidManifest.xml",
+    "optionC": "strings.xml",
+    "optionD": "settings.gradle",
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "question": "Which Android UI component displays a scrollable list of large data sets efficiently?",
+    "optionA": "ScrollView",
+    "optionB": "RecyclerView",
+    "optionC": "LinearLayout",
+    "optionD": "TextView",
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "What object is used to communicate messages between different Android components like Activities?",
+    "optionA": "Intent",
+    "optionB": "Bundle",
+    "optionC": "Context",
+    "optionD": "Delegate",
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "Which activity lifecycle method is called when the user starts interacting with the activity?",
+    "optionA": "onCreate()",
+    "optionB": "onStart()",
+    "optionC": "onResume()",
+    "optionD": "onPause()",
+    "correctAnswer": 3
+  },
+  {
+    "id": 7,
+    "question": "Which component is used to show a small transient pop-up message at the bottom of the screen?",
+    "optionA": "Dialog",
+    "optionB": "Toast",
+    "optionC": "Notification",
+    "optionD": "Snackbar",
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "question": "Which Gradle file is used to define project-wide dependencies and SDK targets?",
+    "optionA": "app/build.gradle",
+    "optionB": "settings.gradle",
+    "optionC": "gradle.properties",
+    "optionD": "local.properties",
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "question": "What is the default base class for activities in modern Android Material Design applications?",
+    "optionA": "Activity",
+    "optionB": "AppCompatActivity",
+    "optionC": "ComponentActivity",
+    "optionD": "FragmentActivity",
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "Which method is called immediately before an activity is destroyed by the system?",
+    "optionA": "onStop()",
+    "optionB": "onDestroy()",
+    "optionC": "onPause()",
+    "optionD": "onFinish()",
+    "correctAnswer": 2
+  }
+]

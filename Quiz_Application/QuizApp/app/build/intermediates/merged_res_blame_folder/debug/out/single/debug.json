@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.aditya.quizapp-merged_res-31:/layout_activity_welcome.xml.flat",
+        "source": "com.aditya.quizapp-main-33:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.aditya.quizapp-merged_res-31:/drawable_bg_option_default.xml.flat",
+        "source": "com.aditya.quizapp-main-33:/drawable/bg_option_default.xml"
+    },
+    {
+        "merged": "com.aditya.quizapp-merged_res-31:/layout_activity_result.xml.flat",
+        "source": "com.aditya.quizapp-main-33:/layout/activity_result.xml"
+    },
+    {
+        "merged": "com.aditya.quizapp-merged_res-31:/drawable_bg_option_correct.xml.flat",
+        "source": "com.aditya.quizapp-main-33:/drawable/bg_option_correct.xml"
+    },
+    {
+        "merged": "com.aditya.quizapp-merged_res-31:/layout_activity_quiz.xml.flat",
+        "source": "com.aditya.quizapp-main-33:/layout/activity_quiz.xml"
+    },
+    {
+        "merged": "com.aditya.quizapp-merged_res-31:/drawable_bg_option_wrong.xml.flat",
+        "source": "com.aditya.quizapp-main-33:/drawable/bg_option_wrong.xml"
+    }
+]
