@@ -116,7 +116,9 @@ Run automated JVM unit tests via terminal or Android Studio:
 
 ## 📸 Application Screenshots
 
-*(Screenshots will be added in the `Screenshots/` directory upon device deployment)*
+| Welcome Screen | Question Screen | Answer Feedback | Results & Badges |
+| :---: | :---: | :---: | :---: |
+| <img src="Screenshots/01_welcome_screen.jpeg" width="200" alt="Welcome Screen"/> | <img src="Screenshots/02_question_screen.jpeg" width="200" alt="Question Screen"/> | <img src="Screenshots/03_answer_feedback.jpeg" width="200" alt="Answer Feedback State"/> | <img src="Screenshots/04_results_screen.jpeg" width="200" alt="Results Screen"/> |
 
 ---
 

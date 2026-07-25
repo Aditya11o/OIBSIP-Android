@@ -102,6 +102,25 @@ OIBSIP-Android/
 
 ---
 
+## 📸 Application Screenshots Gallery
+
+### 1. Unit Converter Application
+| Default UI State | Conversion Result | Category Switch | Validation Error |
+| :---: | :---: | :---: | :---: |
+| <img src="Unit_Converter/Screenshots/01_default_state.jpeg" width="180" alt="Unit Converter Default"/> | <img src="Unit_Converter/Screenshots/02_conversion_result.jpeg" width="180" alt="Unit Converter Result"/> | <img src="Unit_Converter/Screenshots/03_different_category.jpeg" width="180" alt="Unit Converter Category"/> | <img src="Unit_Converter/Screenshots/04_validation_error.jpeg" width="180" alt="Unit Converter Validation"/> |
+
+### 2. Quiz Application
+| Welcome Screen | Question Screen | Answer Feedback | Results & Badges |
+| :---: | :---: | :---: | :---: |
+| <img src="Quiz_Application/Screenshots/01_welcome_screen.jpeg" width="180" alt="Quiz Welcome"/> | <img src="Quiz_Application/Screenshots/02_question_screen.jpeg" width="180" alt="Quiz Question"/> | <img src="Quiz_Application/Screenshots/03_answer_feedback.jpeg" width="180" alt="Quiz Feedback"/> | <img src="Quiz_Application/Screenshots/04_results_screen.jpeg" width="180" alt="Quiz Results"/> |
+
+### 3. Stopwatch Application
+| Initial / Reset State | Running State with Laps | Paused State |
+| :---: | :---: | :---: |
+| <img src="Stopwatch/Screenshots/01_initial_state.jpeg" width="180" alt="Stopwatch Initial"/> | <img src="Stopwatch/Screenshots/02_running_with_laps.jpeg" width="180" alt="Stopwatch Running"/> | <img src="Stopwatch/Screenshots/03_paused_state.jpeg" width="180" alt="Stopwatch Paused"/> |
+
+---
+
 ## ⚙️ Building & Running Projects
 
 1. **Clone the Repository**:

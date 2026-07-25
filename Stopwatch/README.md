@@ -121,7 +121,9 @@ Run automated JVM unit tests via terminal or Android Studio:
 
 ## 📸 Application Screenshots
 
-*(Screenshots will be added in the `Screenshots/` directory upon device deployment)*
+| Initial / Reset State | Running State with Laps | Paused State |
+| :---: | :---: | :---: |
+| <img src="Screenshots/01_initial_state.jpeg" width="200" alt="Initial / Reset State"/> | <img src="Screenshots/02_running_with_laps.jpeg" width="200" alt="Running State with Laps"/> | <img src="Screenshots/03_paused_state.jpeg" width="200" alt="Paused State"/> |
 
 ---
 

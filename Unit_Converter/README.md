@@ -106,7 +106,9 @@ Run automated JUnit unit tests via terminal or Android Studio:
 
 ## 📸 Application Screenshots
 
-*(Screenshots will be added in the `Screenshots/` directory upon device deployment)*
+| Default UI State | Conversion Result State | Category Switch State | Validation Error State |
+| :---: | :---: | :---: | :---: |
+| <img src="Screenshots/01_default_state.jpeg" width="200" alt="Default UI State"/> | <img src="Screenshots/02_conversion_result.jpeg" width="200" alt="Conversion Result State"/> | <img src="Screenshots/03_different_category.jpeg" width="200" alt="Different Category State"/> | <img src="Screenshots/04_validation_error.jpeg" width="200" alt="Validation Error State"/> |
 
 ---
 
