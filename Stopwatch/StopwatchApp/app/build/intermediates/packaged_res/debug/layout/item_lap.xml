@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/spacing_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/spacing_small"
+        android:paddingVertical="4dp">
+
+        <!-- Lap Number -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_lap_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_lap_time"
+            android:textStyle="bold"
+            tools:text="Lap 1" />
+
+        <!-- Lap Time -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_lap_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:textColor="@color/on_surface"
+            android:textSize="@dimen/text_size_lap_time"
+            android:textStyle="bold"
+            tools:text="00:05.23" />
+
+        <!-- Total Time -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="@dimen/text_size_subtitle"
+            tools:text="Total: 00:05.23" />
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        app:dividerColor="@color/divider_color" />
+
+</LinearLayout>
