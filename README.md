@@ -13,7 +13,6 @@ This repository contains the complete portfolio of Android applications develope
 - **Commencement Date**: 5 July 2026
 - **Submission Deadline**: 15 August 2026
 - **Organization**: Oasis Infobyte (Satya Niketan, New Delhi, India)
-- **Official Reference Document**: [Gmail - Congratulations || Offer Letter || Orientation Email.pdf](file:///d:/Desktop/OIBSIP-Android/Gmail%20-%20Congratulations%20__%20Offer%20Letter%20__%20Orientation%20Email.pdf)
 
 ---
 
@@ -35,7 +34,6 @@ All projects are offline-first, native Android applications built using **Java 8
 OIBSIP-Android/
 ├── README.md
 ├── LICENSE
-├── Gmail - Congratulations __ Offer Letter __ Orientation Email.pdf
 │
 ├── Unit_Converter/
 │   ├── README.md
